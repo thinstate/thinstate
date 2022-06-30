@@ -1,6 +1,7 @@
 # thinstate
 
 Javascript state management for modern web | redux inspired | < 2kB | super simple | 0 dependency.
+
 A peer dependency of [https://www.npmjs.com/package/web-essential-utils](https://www.npmjs.com/package/web-essential-utils) with few general purpose js util functions for production apps.
 
 To install, if using yarn:
