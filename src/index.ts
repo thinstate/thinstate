@@ -9,7 +9,7 @@ export interface IAsyncStorage {
 export type Action<T> = {
   type: T;
   payload?: any;
-  rerenderTags?: any[];
+  rerenderTags?: any;
 };
 
 export const createStore = <T>(
