@@ -53,7 +53,7 @@ export const createStore = <T>(
     subscriptions = subscriptions.filter(s => s.listener !== listener);
   };
 
-  const subscribe = (listener: any, tags: any[]) => {
+  const subscribe = (listener: any, tags: any) => {
     subscriptions.push({ listener, tags });
 
     return () => unsubscribe(listener);
@@ -73,7 +73,7 @@ export const createStore = <T>(
     asyncLocalStore.setItem(deviceStorageKey, JSON.stringify(persistableState));
   };
 
-  const getState = (selector: string) => {
+  const getState = (selector?: string) => {
     if (selector && !selector.includes('.')) {
       return state[selector];
     }
