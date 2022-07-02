@@ -8,8 +8,8 @@ export interface IAsyncStorage {
 
 export type Action<T> = {
   type: T;
-  payload: any;
-  rerenderTags: any[];
+  payload?: any;
+  rerenderTags?: any[];
 };
 
 export const createStore = <T>(
